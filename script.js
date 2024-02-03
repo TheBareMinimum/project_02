@@ -1,47 +1,53 @@
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-}
+let noClickCount = 0;
+let yesClickCount = 0;
 
-.images-container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
+function showMessage(response) {
+  const responseDiv = document.getElementById('response');
+  const yesButton = document.getElementById('yesButton');
+  const noButton = document.getElementById('noButton');
 
-.images-container img {
-  max-width: 48%;
-}
+  if (response === 'No') {
+    // Increment click count
+    noClickCount++;
 
-p {
-  font-size: 20px;
-  color: #555;
-}
+    // Update text based on click count
+    switch (noClickCount) {
+      case 1:
+        responseDiv.innerHTML = 'Ay lodu';
+        break;
+      case 2:
+        responseDiv.innerHTML = 'Bhai masti nai pls, am I not enough for you';
+        break;
+      case 3:
+        responseDiv.innerHTML = ':(';
+        // Hide the No button after the third click
+        noButton.style.display = 'none';
+        break;
+    }
 
-.buttons {
-  margin-top: 20px;
-}
+    // Increase size of Yes button
+    yesButton.style.transform = `scale(${1 + yesClickCount * 0.1})`;
+  } else if (response === 'Yes') {
+    // Increment click count
+    yesClickCount++;
 
-button {
-  padding: 12px 24px;
-  font-size: 16px;
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  margin: 0 10px;
-  transition: all 0.3s ease;
-}
+    // Update text based on click count
+    switch (yesClickCount) {
+      case 1:
+        responseDiv.innerHTML = 'Someones smashing tonite, lol sorry';
+        break;
+      default:
+        responseDiv.innerHTML = '<3 Looking forward to sphaget shroom bals and fondle balls bye-bye';
 
-button:hover {
-  background-color: #45a049;
-}
+        // Hide the Yes button after the last prompt
+        yesButton.style.display = 'none';
 
-#response {
-  margin-top: 20px;
-  font-size: 16px;
-  color: #777;
+        // Optionally hide the No button too
+        noButton.style.display = 'none';
+        break;
+    }
+
+    // Decrease size of No button
+    noButton.style.transform = `scale(${1 - noClickCount * 0.1})`;
+  }
 }
