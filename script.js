@@ -1,60 +1,47 @@
-let noClickCount = 0;
-let yesClickCount = 0;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
 
-function showMessage(response) {
-  const responseDiv = document.getElementById('response');
-  const yesButton = document.getElementById('yesButton');
-  const noButton = document.getElementById('noButton');
+.images-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
 
-  if (response === 'No') {
-    // Increment click count
-    noClickCount++;
+.images-container img {
+  max-width: 48%;
+}
 
-    // Update text based on click count
-    switch (noClickCount) {
-      case 1:
-        responseDiv.innerHTML = 'Ay lodu';
-        break;
-      case 2:
-        responseDiv.innerHTML = 'Bhai masti nai pls, am I not enough for you';
-        break;
-      case 3:
-        responseDiv.innerHTML = ':(';
-        noButton.style.display = 'none'; // Hide the No button after the third click
-        break;
-    }
+p {
+  font-size: 20px;
+  color: #555;
+}
 
-    // Add animations to buttons
-    yesButton.classList.add('increaseSize');
-    noButton.classList.add('decreaseSize');
+.buttons {
+  margin-top: 20px;
+}
 
-    // Remove the 'increaseSize' and 'decreaseSize' classes after the animation completes
-    setTimeout(() => {
-      yesButton.classList.remove('increaseSize');
-      noButton.classList.remove('decreaseSize');
-    }, 500);
-  } else if (response === 'Yes') {
-    // Increment click count
-    yesClickCount++;
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
 
-    // Add animations to buttons
-    yesButton.classList.add('increaseSize');
-    noButton.classList.add('decreaseSize');
+button:hover {
+  background-color: #45a049;
+}
 
-    // Update text based on click count
-    switch (yesClickCount) {
-      case 1:
-        responseDiv.innerHTML = 'Someones smashing tonite, lol sorry';
-        break;
-      default:
-        responseDiv.innerHTML = '<3 Looking forward to sphaget shroom bals and fondle balls bye-bye';
-        break;
-    }
-
-    // Remove the 'increaseSize' and 'decreaseSize' classes after the animation completes
-    setTimeout(() => {
-      yesButton.classList.remove('increaseSize');
-      noButton.classList.remove('decreaseSize');
-    }, 500);
-  }
+#response {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #777;
 }
