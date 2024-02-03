@@ -26,7 +26,7 @@ function showMessage(response) {
     }
 
     // Increase size of Yes button significantly
-    yesButton.style.transform = `scale(${1 + yesClickCount * 0.5})`;
+    yesButton.style.transform = `scale(${1 + noClickCount * 0.2})`;
   } else if (response === 'Yes') {
     // Increment click count
     yesClickCount++;
@@ -48,6 +48,6 @@ function showMessage(response) {
     }
 
     // Decrease size of No button significantly
-    noButton.style.transform = `scale(${1 - noClickCount * 0.5})`;
+    noButton.style.transform = `scale(${1 - yesClickCount * 0.2})`;
   }
 }
