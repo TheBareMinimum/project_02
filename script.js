@@ -1,4 +1,5 @@
 let noClickCount = 0;
+let yesClickCount = 0;
 
 function showMessage(response) {
   const responseDiv = document.getElementById('response');
@@ -33,15 +34,21 @@ function showMessage(response) {
       noButton.classList.remove('decreaseSize');
     }, 500);
   } else if (response === 'Yes') {
+    // Increment click count
+    yesClickCount++;
+
     // Add animations to buttons
     yesButton.classList.add('increaseSize');
     noButton.classList.add('decreaseSize');
 
-    // Update text based on previous click count for 'Yes' button
-    if (noClickCount === 0) {
-      responseDiv.innerHTML = 'Someones smashing tonite, lol sorry';
-    } else if (noClickCount >= 1) {
-      responseDiv.innerHTML = '<3 Looking forward to sphaget shroom bals and fondle balls bye-bye';
+    // Update text based on click count
+    switch (yesClickCount) {
+      case 1:
+        responseDiv.innerHTML = 'Someones smashing tonite, lol sorry';
+        break;
+      default:
+        responseDiv.innerHTML = '<3 Looking forward to sphaget shroom bals and fondle balls bye-bye';
+        break;
     }
 
     // Remove the 'increaseSize' and 'decreaseSize' classes after the animation completes
