@@ -32,5 +32,11 @@ function showMessage(response) {
       yesButton.style.fontSize = '24px';
       noButton.style.fontSize = '12px';
     }
+
+    // Hide the "Yes" button after the second click
+    if (yesClicks === 2) {
+      yesButton.style.display = 'none';
+    }
   }
 }
+
