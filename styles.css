@@ -1,7 +1,7 @@
 body {
-  background: url('backkk.avif') center/cover no-repeat; /* Replace 'your-background-image.jpg' with the actual file name of your background image */
-  color: #fff;
-  font-family: 'Quicksand', sans-serif; /* Use the 'Quicksand' font or replace it with another minimalistic font */
+  background: url('backkk.gif') center/cover no-repeat;
+  color: #f3ebc1; /* Cream color for the font */
+  font-family: 'Quicksand', sans-serif;
 }
 
 .container {
@@ -19,13 +19,13 @@ body {
 
 .gifs-container img {
   width: 48%;
-  border-radius: 8px; /* Add border-radius for rounded corners */
+  border-radius: 8px;
 }
 
 .options-box {
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  background-color: #f3ebc1; /* Cream color for the box */
   padding: 20px;
-  border-radius: 10px; /* Add border-radius for rounded corners */
+  border-radius: 10px;
 }
 
 .question {
@@ -40,21 +40,42 @@ body {
 button {
   padding: 12px 24px;
   font-size: 16px;
-  background-color: #e91e63; /* Custom background color */
+  background-color: #ff80ab; /* Pink color for the buttons */
   color: #fff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   margin: 0 10px;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 button:hover {
-  background-color: #c2185b; /* Custom hover color */
+  background-color: #ff4081; /* Darker pink color on hover */
 }
 
 #response {
   margin-top: 20px;
   font-size: 16px;
   color: #777;
+}
+
+/* Additional styles for dynamic button sizes */
+button:focus {
+  outline: none;
+}
+
+#yesButton {
+  transform-origin: center;
+}
+
+#noButton {
+  transform-origin: center;
+}
+
+#yesButton:active {
+  transform: scale(1.2);
+}
+
+#noButton:active {
+  transform: scale(0.8);
 }
