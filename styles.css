@@ -1,43 +1,61 @@
+/* Add your existing styles.css rules here */
+
 /* Import Inter font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 
 body {
-  background-color: #f4f4f4; /* Light gray background */
-  color: #555555; /* Dark gray text */
-  font-family: 'Inter', sans-serif;
-  margin: 0;
+  background-color: #11111b;
+  color: #cdd6f4;
+  font-family: 'Inter';
 }
 
 .container {
   max-width: 800px;
-  margin: 50px auto;
+  margin: 0 auto;
   padding: 20px;
-  background-color: #ffffff; /* White container background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  background-color: #1a1a2e;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.logo {
+  color: #e94560;
+  font-size: 24px;
+  margin: 0;
+}
+
+.nav {
+  margin-top: 10px;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #cdd6f4;
+}
+
+.main {
+  position: relative;
+  background-color: #1a1a2e;
+  padding: 40px 20px;
   border-radius: 15px;
   text-align: center;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-img:nth-child(odd) {
-  float: left;
-  margin-right: 20px;
-}
-
-img:nth-child(even) {
-  float: right;
-  margin-left: 20px;
-}
-
-p {
-  font-size: 18px;
+.title {
+  color: #e94560;
 }
 
 .buttons {
@@ -45,10 +63,10 @@ p {
 }
 
 button {
-  padding: 12px 24px; /* Slightly larger button */
+  padding: 12px 24px;
   font-size: 16px;
-  background-color: #4CAF50; /* Green button */
-  color: #ffffff; /* White text */
+  background-color: #4CAF50;
+  color: #ffffff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -57,55 +75,119 @@ button {
 }
 
 button:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #45a049;
 }
 
 #response {
   margin-top: 20px;
   font-size: 16px;
-  color: #777777; /* Gray response text */
-}
-
-/* Your existing styles below */
-
-.main {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  border: 2px solid #89dceb;
-  padding: 10px;
-  border-radius: 20px;
-}
-
-a {
-  text-decoration: none;
-  color: #cdd6f4;
-  cursor: pointer;
-  text-align: center;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-h1[id="title"] {
-  font-size: 50px;
-}
-
-h3[id="experience"] {
-  font-size: 25px;
+  color: #777777;
 }
 
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  background-color: #1a1a2e;
+  color: #cdd6f4;
   text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
 }
 
+/* Add your existing styles.css rules here */
 
-{"payload":{"allShortcutsEnabled":true,"path":"css","repo":{"id":665187309,"defaultBranch":"main","name":"latte","ownerLogin":"Spaxly","currentUserCanPush":false,"isFork":false,"isEmpty":false,"createdAt":"2023-07-11T21:50:13.000+05:30","ownerAvatar":"https://avatars.githubusercontent.com/u/68564017?v=4","public":true,"private":false,"isOrgOwned":false},"currentUser":{"id":158708141,"login":"TheBareMinimum","userEmail":"krishshah514@gmail.com"},"refInfo":{"name":"main","listCacheKey":"v0:1689092420.0","canEdit":true,"refType":"branch","currentOid":"b4966e22a12319091a62ebddc0296003624c6595"},"tree":{"items":[{"name":"style.css","path":"css/style.css","contentType":"file"}],"templateDirectorySuggestionUrl":null,"readme":null,"totalCount":1,"showBranchInfobar":false},"fileTree":{"":{"items":[{"name":"css","path":"css","contentType":"directory"},{"name":"startpage","path":"startpage","contentType":"directory"},{"name":"CNAME","path":"CNAME","contentType":"file"},{"name":"LICENSE","path":"LICENSE","contentType":"file"},{"name":"index.html","path":"index.html","contentType":"file"}],"totalCount":5}},"fileTreeProcessingTime":1.633905,"foldersToFetch":[],"treeExpanded":true,"symbolsExpanded":false,"csrf_tokens":{"/Spaxly/latte/branches":{"post":"LGHrDtq2AWuS6l41nVvB1lEf5qkencs8hH9iigOzceerKZnXqABJ2Z1yGiJlcMSajiUAK83L61XXb69myPv2DQ"},"/Spaxly/latte/branches/fetch_and_merge/main":{"post":"c_GcCAcFcMCMzlv2bRbyo1WO8ZvzaTs2iBl6JERgSism9wjrOQeYFt1znn0AyxmWID5ZEyPjwdBSiqk-KGvrOg"},"/Spaxly/latte/branches/fetch_and_merge/main?discard_changes=true":{"post":"_KDZej6C-ydnvOZONB_pP8gCNdi_Q_VJlSVwuDZHY4eppk2ZAIAT8TYBI8VZwgIKvbKdUG_JD69PtqOiWkzClg"}}},"title":"latte/css at main · Spaxly/latte"}
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+body {
+  background-color: #11111b;
+  color: #cdd6f4;
+  font-family: 'Inter';
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #1a1a2e;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.logo {
+  color: #e94560;
+  font-size: 24px;
+  margin: 0;
+}
+
+.nav {
+  margin-top: 10px;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #cdd6f4;
+}
+
+.main {
+  position: relative;
+  background-color: #1a1a2e;
+  padding: 40px 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.title {
+  color: #e94560;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#response {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #777777;
+}
+
+.footer {
+  background-color: #1a1a2e;
+  color: #cdd6f4;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
