@@ -1,7 +1,7 @@
 body {
   background: url('backkk.avif') center/cover no-repeat; /* Replace 'your-background-image.jpg' with the actual file name of your background image */
-  color: #cdd6f4;
-  font-family: 'Inter';
+  color: #fff;
+  font-family: 'Quicksand', sans-serif; /* Use the 'Quicksand' font or replace it with another minimalistic font */
 }
 
 .container {
@@ -19,15 +19,18 @@ body {
 
 .gifs-container img {
   width: 48%;
+  border-radius: 8px; /* Add border-radius for rounded corners */
 }
 
-.options {
-  text-align: center;
+.options-box {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 10px; /* Add border-radius for rounded corners */
 }
 
-p {
-  font-size: 20px;
-  color: #555;
+.question {
+  font-size: 24px;
+  color: #333;
 }
 
 .buttons {
@@ -37,22 +40,21 @@ p {
 button {
   padding: 12px 24px;
   font-size: 16px;
-  background-color: #4CAF50;
+  background-color: #e91e63; /* Custom background color */
   color: #fff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   margin: 0 10px;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #c2185b; /* Custom hover color */
 }
 
 #response {
   margin-top: 20px;
   font-size: 16px;
   color: #777;
-}
-
 }
