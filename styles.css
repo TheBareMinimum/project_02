@@ -1,3 +1,9 @@
+body {
+  background: url('back.avif') center/cover no-repeat; /* Replace 'your-background-image.jpg' with the actual file name of your background image */
+  color: #cdd6f4;
+  font-family: 'Inter';
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -5,14 +11,18 @@
   text-align: center;
 }
 
-.images-container {
+.gifs-container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.images-container img {
-  max-width: 48%;
+.gifs-container img {
+  width: 48%;
+}
+
+.options {
+  text-align: center;
 }
 
 p {
@@ -33,7 +43,6 @@ button {
   border-radius: 8px;
   cursor: pointer;
   margin: 0 10px;
-  transition: all 0.3s ease;
 }
 
 button:hover {
@@ -46,37 +55,4 @@ button:hover {
   color: #777;
 }
 
-/* Shake animation for the Yes button */
-@keyframes shake {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  25%, 75% {
-    transform: translateX(-5px);
-  }
-  50% {
-    transform: translateX(5px);
-  }
-}
-
-/* Size increase animation for the Yes button */
-@keyframes increaseSize {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(2);
-  }
-}
-
-/* Apply animations to the Yes button */
-#yesButton.shake {
-  animation: shake 0.5s ease-in-out;
-}
-
-#yesButton.increaseSize {
-  animation: increaseSize 0.5s ease-in-out;
 }
