@@ -1,61 +1,43 @@
-/* Add your existing styles.css rules here */
-
-/* Import Inter font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+/* styles.css */
 
 body {
-  background-color: #11111b;
-  color: #cdd6f4;
-  font-family: 'Inter';
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.header {
-  background-color: #1a1a2e;
-  padding: 10px 0;
-  text-align: center;
-}
-
-.logo {
-  color: #e94560;
-  font-size: 24px;
+  background-color: #ffe6ff; /* Light pink background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
 }
 
-.nav {
-  margin-top: 10px;
-}
-
-.nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-.nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.nav a {
-  text-decoration: none;
-  color: #cdd6f4;
-}
-
-.main {
-  position: relative;
-  background-color: #1a1a2e;
-  padding: 40px 20px;
+.container {
+  max-width: 800px; /* Increased width for horizontal layout */
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   text-align: center;
 }
 
-.title {
-  color: #e94560;
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Arrange images horizontally */
+img:nth-child(odd) {
+  float: left;
+  margin-right: 20px;
+}
+
+img:nth-child(even) {
+  float: right;
+  margin-left: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
 }
 
 .buttons {
@@ -63,131 +45,23 @@ body {
 }
 
 button {
-  padding: 12px 24px;
+  padding: 10px 20px;
   font-size: 16px;
-  background-color: #4CAF50;
-  color: #ffffff;
+  background-color: #ff66b2; /* Pink button */
+  color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   cursor: pointer;
   margin: 0 10px;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #ff3385; /* Darker pink on hover */
 }
 
 #response {
   margin-top: 20px;
   font-size: 16px;
-  color: #777777;
-}
-
-.footer {
-  background-color: #1a1a2e;
-  color: #cdd6f4;
-  text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
-/* Add your existing styles.css rules here */
-
-/* Import Inter font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
-
-body {
-  background-color: #11111b;
-  color: #cdd6f4;
-  font-family: 'Inter';
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.header {
-  background-color: #1a1a2e;
-  padding: 10px 0;
-  text-align: center;
-}
-
-.logo {
-  color: #e94560;
-  font-size: 24px;
-  margin: 0;
-}
-
-.nav {
-  margin-top: 10px;
-}
-
-.nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-.nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.nav a {
-  text-decoration: none;
-  color: #cdd6f4;
-}
-
-.main {
-  position: relative;
-  background-color: #1a1a2e;
-  padding: 40px 20px;
-  border-radius: 15px;
-  text-align: center;
-}
-
-.title {
-  color: #e94560;
-}
-
-.buttons {
-  margin-top: 20px;
-}
-
-button {
-  padding: 12px 24px;
-  font-size: 16px;
-  background-color: #4CAF50;
-  color: #ffffff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  margin: 0 10px;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #45a049;
-}
-
-#response {
-  margin-top: 20px;
-  font-size: 16px;
-  color: #777777;
-}
-
-.footer {
-  background-color: #1a1a2e;
-  color: #cdd6f4;
-  text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  color: #777;
 }
