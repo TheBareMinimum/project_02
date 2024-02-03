@@ -1,6 +1,6 @@
 body {
   background: url('backkk.avif') center/cover no-repeat;
-  color: #f3ebc1; /* Cream color for the font */
+  color: #465362; /* Slightly darker shade for the font */
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .options-box {
-  background-color: #f3ebc1; /* Cream color for the box */
+  background-color: #aedbf5; /* Light blue color for the box */
   padding: 20px;
   border-radius: 10px;
 }
@@ -40,7 +40,7 @@ body {
 button {
   padding: 12px 24px;
   font-size: 16px;
-  background-color: #ff80ab; /* Pink color for the buttons */
+  background-color: #ff80ab;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -50,7 +50,7 @@ button {
 }
 
 button:hover {
-  background-color: #ff4081; /* Darker pink color on hover */
+  background-color: #ff4081;
 }
 
 #response {
